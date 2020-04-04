@@ -1,0 +1,12 @@
+body {
+    min-height: 100%;
+}
+body {
+    background: #ff5e63; /* Fallback for browsers that don't support gradients */
+    font-family: "Varela Round", sans-serif;
+    background: linear-gradient(#ff9968, #ff5e63)  no-repeat;
+}
+#contact{
+    background-color:rgb(255, 94 , 99);
+    background: linear-gradient(#ff9968, #ff5e63)  no-repeat;
+}

@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav id="nav" class="navbar navbar-expand-lg navbar-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" style="margin-right: 30px">
+                <a class="nav-ink" href="#"><i class="fa fa-fw fa-home"></i> HOME</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" routerLink="/userLogin"><i class="fa fa-fw fa-user"></i>USER</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#"><i class="fa fa-fw fa-file"></i>TRANSACTION</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#"><i class="fa fa-book" aria-hidden="true"></i>BOOKS</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#"><i class="fa fa-users" aria-hidden="true"></i>MEMEBRS</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#"><i class="fa fa-archive" aria-hidden="true"></i>ARCHIVE</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#"><i class="fa fa-search" aria-hidden="true"></i>ADVANCESEARCH</a>
+            </li>
+
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" routerLink="/adminLogin"><i class="fa fa-sign-out" aria-hidden="true"></i>LOGOUT</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <p style="float: right; margin-left: 250px;padding-top:10px;">WELCOME:LIBRARIAN</p>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section>
+    <div style="background-color:grey;margin: 10px;padding: 10px;;">
+        <i class="fa-fa-user" aria-hidden="true"></i><b>Books Table</b></div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="border:2px dotted black;margin: 20px;">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#">NEW BOOKS</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#">OLD BOOKS</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#">LOST BOOKS</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#">DAMAGED BOOKS</a>
+            </li>
+            <li class="nav-item" style="margin-right: 30px">
+                <a class="nav-ink" href="#">SUBJECT FOR REPALCEMENT</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <button type="submit" class="btn btn-success"
+            style="border-radius: 20px;border: 10px;float: left;margin-left: 10px;">
+            <i class="fa fa-plus" aria-hidden="true"></i>ADD books</button>
+    </div>
+    <button type="print" class="btn btn-primary"
+        style="border-radius: 20px;border: 10px;float:right;margin-right: 10px;">
+        <i class="fa fa-print" aria-hidden="true"></i>print</button>
+
+    <div style="border-radius: 20px;border: 10px;float:right;margin-right: 10px;">
+        <label for="search">Search</label></div>
+    <div style="border-radius: 20px;border: 10px;float:right;margin-right: 10px;">
+        <input type="text" name="search">
+    </div>
+</section>
+<table class="table table-bordered" style="margin-top: 20px;">
+    <tr>
+        <th>ACC NO.</th>
+        <th>BOOK TITTLE</th>
+        <th>CATEGORY</th>
+        <th>AUTHOR</th>
+        <th>COPIES</th>
+        <th>BOOK PUB</th>
+        <th>PUBLISHER NAME</th>
+        <th>ISBN</th>
+        <th>COPYRIGHT YEAR</th>
+        <th>DATE ADDED</th>
+        <th>STATUS</th>
+        <th>ACTION</th>
+    </tr>
+    <tr>
+
+
+
+
+
+
+
+
+        
+        <td> <button type="edit" class="btn btn-success"><i class="fa fa-pencil fa-fw" style="color:white;"
+                    aria-hidden="true"></i></button>
+        </td>
+        <td (click)="deleteRow(i)"> <button type="delete" class="btn btn-danger"><i class="fa fa-trash"
+                style="color:white;" aria-hidden="true"></i></button>
+        </td>
+
+    </tr>
+</table>

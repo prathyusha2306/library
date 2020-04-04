@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div id="login" class=" card offset-3 col-md-4 mt-4  ">
+    <div class="card-body">
+        <div class="form-group ">
+            <h4>LOGIN FORM</h4>
+        </div>
+        <form method="POST" name="myform" [formGroup]="aloginGroup">
+            <div class="form-group">
+                <label for="uname"><i class="fa fa-fw fa-user"></i>Username:</label>
+                <input type="text" class="form-control" ngmodel formControlName="aemail" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="pwd"> <i class="fa fa-key" aria-hidden="true"></i>Password:</label>
+                <input type="password" class="form-control" ngmodel formControlName="apassword" placeholder="Enter password">
+            </div>
+            <div>
+                <button type="submit" (click)="submit()"  [disabled]="aloginGroup.invalid" class="btn btn-primary">LOGIN</button>
+            </div>
+        </form>
+    </div>
+</div>
